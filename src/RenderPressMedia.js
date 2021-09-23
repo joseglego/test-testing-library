@@ -41,7 +41,7 @@ function RenderPressMedia(props) {
            <Card>
              <Card.Body>
                <ul className="d-flex flex-row m-0 list-unstyled align-items-center">
-                 <li aria-label="Reminder to do or reminder for today">
+                 <li aria-label="Reminder to do or reminder for today" data-testid="component" data-media={press.media}>
                    {renderPress(press.media)}
                  </li>
                </ul>

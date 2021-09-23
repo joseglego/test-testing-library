@@ -30,6 +30,6 @@ describe('<RenderPressMedia/>', () => {
     //given
     render(<RenderPressMedia pressPlannedData={data} />);
     //then
-    expect(screen.getByText(/letter/i)).toBeInTheDocument();
+    expect(screen.getByTestId('component')).toHaveAttribute('data-media', data.media);
   });
 });
